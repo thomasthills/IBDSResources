@@ -1,5 +1,5 @@
 ---
-title             : "Sexy title"
+title             : "Sexy title that says what you found"
 shorttitle        : "short and sexy title"
 
 author: 
