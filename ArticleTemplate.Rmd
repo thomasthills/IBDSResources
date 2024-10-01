@@ -1,0 +1,80 @@
+---
+title             : "Sexy title"
+shorttitle        : "short and sexy title"
+
+author: 
+  - name          : "Thomas Hills"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Gibbet Hill Road, Coventry, CV4 7AL, UK"
+    email         : "t.t.hills@warwick.ac.uk"
+
+affiliation:
+  - id            : "1"
+    institution   : "University of Warwick"
+
+authornote: |
+  This work was supported by the Alan Turing Institute and Royal Society Wolfson Research Merit Award WM160074.
+
+abstract: |
+  abstract -- this should say 1) why it's important, 2) some pointer to past theory and the gap in the literature that you will address, 3) what you did, 4) the results, 5) what it means.
+  
+keywords          : "cognitive aging, Rescorla Wagner, spreading activation, network science, "
+wordcount         : "X"
+
+bibliography      : bds.bib 
+
+floatsintext      : no
+linenumbers       : yes
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+r_refs("r-references.bib")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+# Introduction (this doesn't need a label)
+Cognitive aging across the adult lifespan is characterized by two distinct and well-document patterns: as individuals age, many measures of working memory, processing speed, and long-term memory show apparent performance decrements from approximately the age of 20, while at the same time, measures of vocabulary and other kinds of general knowledge increase [@Salthouse:2004is;@park2009adaptive]. This distinction between the ability to solve novel problems in a fast and accurate way, called _fluid intelligence_, and the quantity of one's prior knowledge, called _crystallized knowledge_, is a classic division of intelligence [@cattell1987intelligence]. What is less well understood is how these two patterns might be related to one another--that is, how might a rise in crystallized intelligence influence a decline in fluid intelligence?
+
+## you can use subsections to organize your introduction
+
+## The Present article (label if you like)
+
+Explain your hypotheses linked to the theory above here.
+
+# Methods
+
+use the below sections as needed
+## Participants
+## Procedure
+
+# Results
+
+Put your hypotheses and analyses to address those hypotheses here.  Clearly explain how the data addresses the hypothesis and what the answer is.
+
+
+# Discussion
+
+First paragraph is a good place to tell us what you learned. Then connect to additional literature and future experiments/questions that arise.
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
